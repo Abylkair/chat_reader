@@ -10,8 +10,8 @@
 
       First, clone the repository to your local machine:
       ```bash
-      git clone <REPOSITORY_URL>
-      cd chat-reader
+      git clone https://github.com/Abylkair/chat_reader
+      cd chat_reader
       ```
 
    2. **Install Dependencies**
