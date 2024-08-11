@@ -1,0 +1,125 @@
+/* Styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    /* Background color of the page */
+    color: #fff;
+    /* Text color */
+}
+
+header {
+    background-color: #121212;
+    /* Background color of the header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #212121;
+    /* Background color of the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+}
+
+.user-list {
+    flex: 0 0 150px;
+    padding: 10px;
+    border-right: 1px solid #333;
+    /* Border color of the user list */
+    overflow-y: auto;
+}
+
+.user-list div {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #333;
+    /* Background color of the user list items */
+}
+
+.user-list div:hover {
+    background-color: #444;
+    /* Background color of the user list items on hover */
+}
+
+.user-list div.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.chat-container {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-box input[type="file"] {
+    display: none;
+}
+
+.input-box button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.input-box button:hover {
+    background-color: #0056b3;
+    /* Modified button color on hover */
+}
+
+/* Styles for chat messages */
+.chat-cell {
+    border: 1px solid #444;
+    /* Border color of chat blocks */
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #333;
+    /* Background color of chat blocks */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.user-info {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.message {
+    margin-top: 5px;
+}
+
+.message-text {
+    margin-bottom: 5px;
+}
+
+.time-info {
+    font-size: 0.8em;
+    color: #777;
+}
